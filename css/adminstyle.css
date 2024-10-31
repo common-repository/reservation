@@ -1,0 +1,469 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+h1 {
+  color: #333;
+  font-family: arial, sans-serif;
+  margin: 1em auto;
+  width: 80%;
+}
+
+/* login css start */
+
+.paddingclass {
+    margin-top: 20px;
+}
+
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #0073AA;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: ##0073AA;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+.titleheading{width: 100%;float: left;margin: 20px 0px;font-size: 15px;color: #0073AA;font-weight: bold;}
+.cols{width:50%;float:left;}
+
+.lbl img {
+    width: 100% !important;
+	height:295px!important;
+}
+p.submit {
+    text-align: left;
+    max-width: 100%;
+    margin-top: 50px;
+    padding-top: 15px;
+}
+.cblock_main {
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+}
+.cblock {
+    width: 50%;
+}
+.cblock_1 {
+    width: 50%;
+    float: right;
+    margin-top: -57px !important;
+}
+/* login css end */
+
+/* table css */
+.mrgi{margin-right:2%;}
+.tblbolck{margin-top:20px;}
+table.timecard {
+	border-collapse: collapse;
+	border: 1px solid #fff; /*for older IE*/
+	border-style: hidden;
+	width:100%;
+	float:left;
+	margin-top:30px;
+}
+
+table.timecard caption {
+	background-color: #0073AA;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 0em;
+	padding: 12px 0px;
+}
+
+table.timecard thead th {
+	padding: 8px;
+	background-color: #ccdfe0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #6D6D6D;
+}
+
+table.timecard thead th#thDay {
+	width: 40%;	
+}
+
+table.timecard thead th#thRegular, table.timecard thead th#thOvertime, table.timecard thead th#thTotal {
+	width: 20%;
+}
+
+table.timecard th, table.timecard td {
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #928635  #ccc;
+}
+
+table.timecard td {
+	text-align: center;
+}
+
+table.timecard tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table.timecard tfoot {
+	font-weight: bold;
+	font-size: large;
+	background-color: #687886;
+	color: #fff;
+}
+
+table.timecard tr.even {
+	background-color: #d9e2fd;
+}
+
+/* table css end */
+/*  radio button css */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #928635;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* radio buttton css end */
+
+.tabordion {
+  color: #333;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 80%;
+}
+
+.tabordion input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.tabordion section {
+  display: block;
+}
+
+.tabordion section .labl {
+  background: #ccc;
+  border:1px solid #fff;
+  cursor: pointer;
+  display: block;
+  font-size:15px;
+  padding: 15px 20px;
+  position: relative;
+  width: 180px;
+  z-index:100;
+}
+
+.tabordion section article {
+  display: none;
+  left: 230px;
+  min-width: 900px;
+  padding: 0 0 0 21px;
+  position: absolute;  
+  top: 0;
+}
+
+.tabordion section article:after {
+  background-color: #ccc;
+  bottom: 0;
+  content: "";
+  display: block;
+  left:-229px;
+  position: absolute;
+  top: 0;
+  width: 220px;
+  z-index:1;
+  min-height: 550px;
+}
+.leftblk {
+    float: left;
+    width: 80%;
+}
+.form-group.wid {
+    width: 40%;
+}
+h3{font-size:17px!important}
+.gleft{float:left;width:20%; margin:10px 0px;}
+.clear{clear:both;}
+.tabordion input[name="sections"]:checked + label { 
+  background: #eee;
+  color: #976;
+}
+
+.tabordion input[name="sections"]:checked ~ article {
+  display: block;
+}
+
+.wp-picker-open + .wp-picker-input-wrap {
+    display: inline-block;
+    vertical-align: top;
+    display: none!important;
+}
+.wp-picker-container .iris-picker {
+
+    border-radius: 0;
+    border-color: #ddd;
+    margin-top: -4px;
+    margin-left: -12px;
+    position: absolute;
+
+}
+.heading{
+	background: #EEE;
+font-size: 16px;
+font-weight: normal;
+color: #976;
+padding: 15px 12px;
+border: 1px solid #fff;
+margin-bottom:20px;
+}
+.left,.right {
+    width: 100%;
+	float: left;
+	padding: 4px 0px;
+}
+.blockdiv {
+    width: 20%;
+    float: left;
+}
+.globalblock {
+    margin: 20px 0px;
+}
+.lbl {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.inbox {
+    margin-bottom: 20px;
+}
+#box-font-size{width:100px;}
+.layTitle {background: #0073AA;padding: 15px 8px;font-size: 16px;color:#fff;}
+.layoutdiv{width:46%;float:left;margin-right:2%;margin-top: 10px;}
+.recimg{width:100%;}
+.layoutdiv .lbl {font-size: 15px;margin-bottom: 7px; height: 250px;}
+.paragraph{font-size:16px;font-weight: bold;}
+.second{margin-top:20px;}
+.maindiv{width:100%;margin-top:15px;}
+.form-group label{width:100%;float: left;font-size: 15px;margin-bottom:10px;}
+.form-group{margin-top:15px;}
+small{float:right;font-size:11px;width:50%;color:green}
+.shortcode {
+    width: 99%;
+    border: 1px solid #D2D2D2;
+    padding: 3px 0 3px 3px;
+    background: #fff;
+    font-weight: bold;
+    display: inline-block;
+    margin: 3px 0px;
+}
+#result{padding:10px;}
+.success{color:green;}
+.unsuccess{color:#ff0000;}
+.loginheading{text-align:center;}
+.timecard tbody td {
+    font-size: 13px;
+    padding: 6px 0px;
+}
+#button{background:#0073AA;color:#fff;}
+@media (max-width: 533px) {
+  
+  h1 {
+    width: 100%;
+  }
+
+  .tabordion {
+    width: 100%;
+  }
+  
+  .tabordion section label {
+    font-size: 1em;
+    width: 160px;
+  }  
+
+ .tabordion section article {
+    left: 200px;
+    min-width: 270px;
+  } 
+  
+  .tabordion section article:after {
+    background-color: #ccc;
+    bottom: 0;
+    content: "";
+    display: block;
+    left:-199px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+
+  }  
+  
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    width: 96%;
+  }
+
+  .tabordion {
+    width: 96%;
+  }
+}
+
+
+@media (min-width: 1366px) {
+  h1 {
+    width: 70%;
+  }
+
+  .tabordion {
+    width: 100%;
+  }
+}
+
+.iris-picker{z-index:1;}
+.pluginnotes{color:green;font-size:12px;}
+.pluginnotes b{color:#333333;}
+
+.buabal {
+    width: 90%;
+    float: left;
+    text-align: justify;
+	height: 90px;
+	
+}
+.cblock_1 .buabal{color:#6595BF;}
